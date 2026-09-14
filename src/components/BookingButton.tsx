@@ -4,7 +4,7 @@ import { cn } from "../lib/cn";
 import { useLanguage } from "../i18n/LanguageContext";
 
 type BookingButtonProps = {
-  variant?: "primary" | "secondary" | "light" | "link";
+  variant?: "primary" | "secondary" | "light" | "ghost" | "link";
   size?: "sm" | "md" | "lg";
   className?: string;
   children?: ReactNode;
@@ -15,6 +15,8 @@ const variantClass = {
   secondary:
     "bg-transparent text-charcoal border border-charcoal/20 hover:border-rose-dark hover:text-rose-dark",
   light: "bg-champagne text-charcoal hover:bg-ivory border border-champagne",
+  ghost:
+    "bg-transparent text-ivory border border-ivory/40 hover:border-champagne hover:text-champagne",
   link: "bg-transparent text-muted hover:text-charcoal",
 } as const;
 

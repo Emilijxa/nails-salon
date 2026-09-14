@@ -27,11 +27,11 @@ export type OpeningHoursEntry = {
 };
 
 export const openingHours: OpeningHoursEntry[] = [
-  { id: "monday", dayKey: "monday", hours: "XX:XX – XX:XX" },
-  { id: "tuesday", dayKey: "tuesday", hours: "XX:XX – XX:XX" },
-  { id: "wednesday", dayKey: "wednesday", hours: "XX:XX – XX:XX" },
-  { id: "thursday", dayKey: "thursday", hours: "XX:XX – XX:XX" },
-  { id: "friday", dayKey: "friday", hours: "XX:XX – XX:XX" },
-  { id: "saturday", dayKey: "saturday", hours: "XX:XX – XX:XX" },
-  { id: "sunday", dayKey: "sunday", hours: "closed" },
+  { id: "monday", dayKey: "monday", hours: "09:00 – 19:00" },
+  { id: "tuesday", dayKey: "tuesday", hours: "09:00 – 19:00" },
+  { id: "wednesday", dayKey: "wednesday", hours: "09:00 – 19:00" },
+  { id: "thursday", dayKey: "thursday", hours: "09:00 – 19:00" },
+  { id: "friday", dayKey: "friday", hours: "09:00 – 19:00" },
+  { id: "saturday", dayKey: "saturday", hours: "09:00 – 19:00" },
+  { id: "sunday", dayKey: "sunday", hours: "09:00 – 19:00" },
 ];

@@ -31,7 +31,7 @@ const es = {
   services: {
     heading: "Servicios",
     subtitle:
-      "Tratamientos pensados para un acabado limpio, elegante y duradero. Los precios y duraciones son orientativos hasta confirmar la información definitiva.",
+      "Tratamientos pensados para un acabado limpio, elegante y duradero.",
     price: "Precio",
     duration: "Duración",
     bookThis: "Reservar",
@@ -76,6 +76,7 @@ const es = {
     next: "Imagen siguiente",
     dialog: "Vista ampliada de la galería",
     counter: "{current} de {total}",
+    filmstrip: "Carrusel de trabajos",
     alts: {
       glitterArt: "Manicura almendra en rosa nude con glitter, flor y detalle de strass.",
       milkyWhite: "Manicura corta en blanco lechoso con acabado brillante.",
@@ -117,10 +118,11 @@ const es = {
     phone: "Teléfono",
     whatsapp: "WhatsApp",
     instagram: "Instagram",
+    instagramPending: "Perfil de Instagram pendiente de añadir.",
     email: "Correo",
     hours: "Horario orientativo",
     hoursNote:
-      "Este horario es solo informativo. La disponibilidad real se muestra al reservar en Square.",
+      "Este horario es solo informativo. La disponibilidad real se muestra en la reserva.",
     addressNote: "Dirección exacta facilitada al confirmar la cita.",
     locationPending: "Ubicación pendiente de indicar.",
     phonePending: "Teléfono pendiente de indicar.",
@@ -164,8 +166,8 @@ const es = {
     updated: "Documento pendiente de completar antes de la publicación.",
     p1: "Esta página es un marcador de posición para el aviso legal exigido en España. Debe incluir la identidad de la titular, los datos de contacto y, cuando corresponda, el NIF y el domicilio profesional.",
     p2: "Esos datos no se han inventado. Se añadirán cuando Neringa los facilite.",
-    p3: "El contenido de esta web es informativo. Las reservas y la disponibilidad se gestionan a través de Square Appointments. Los precios mostrados como €XX son provisionales.",
-    p4: "Las fotografías de la galería muestran trabajos de Neringa. Los precios indicados como €XX son provisionales hasta que se confirmen.",
+    p3: "El contenido de esta web es informativo. Las reservas y la disponibilidad se gestionan a través de Square Appointments.",
+    p4: "Las fotografías de la galería muestran trabajos de Neringa.",
   },
 };
 
@@ -200,7 +202,7 @@ const en: typeof es = {
   services: {
     heading: "Services",
     subtitle:
-      "Treatments focused on a clean, elegant, lasting finish. Prices and durations are placeholders until the final details are confirmed.",
+      "Treatments focused on a clean, elegant, lasting finish.",
     price: "Price",
     duration: "Duration",
     bookThis: "Book",
@@ -240,6 +242,7 @@ const en: typeof es = {
     next: "Next image",
     dialog: "Enlarged gallery view",
     counter: "{current} of {total}",
+    filmstrip: "Work filmstrip",
     alts: {
       glitterArt: "Almond nails in nude pink with glitter, a floral accent and a crystal detail.",
       milkyWhite: "Short milky-white manicure with a glossy finish.",
@@ -281,10 +284,11 @@ const en: typeof es = {
     phone: "Phone",
     whatsapp: "WhatsApp",
     instagram: "Instagram",
+    instagramPending: "Instagram profile still to be added.",
     email: "Email",
     hours: "Indicative hours",
     hoursNote:
-      "These hours are for guidance only. Real availability is shown when you book with Square.",
+      "These hours are for guidance only. Real availability is shown when you book.",
     addressNote: "Exact address provided when the appointment is confirmed.",
     locationPending: "Location still to be added.",
     phonePending: "Phone number still to be added.",
@@ -327,8 +331,8 @@ const en: typeof es = {
     updated: "This document still needs to be completed before the site goes live.",
     p1: "This page is a placeholder for the legal notice required in Spain. It should include the owner’s identity, contact details and, where applicable, tax identification and professional address.",
     p2: "Those details have not been invented. They will be added when Neringa provides them.",
-    p3: "The content of this website is informational. Bookings and availability are managed through Square Appointments. Prices shown as €XX are provisional.",
-    p4: "Gallery photographs show Neringa’s work. Prices shown as €XX are provisional until they are confirmed."
+    p3: "The content of this website is informational. Bookings and availability are managed through Square Appointments.",
+    p4: "Gallery photographs show Neringa’s work.",
   },
 };
 
@@ -363,7 +367,7 @@ const ru: typeof es = {
   services: {
     heading: "Услуги",
     subtitle:
-      "Процедуры для чистого, элегантного и стойкого результата. Цены и длительность указаны ориентировочно, пока не подтверждены окончательные данные.",
+      "Процедуры для чистого, элегантного и стойкого результата.",
     price: "Цена",
     duration: "Длительность",
     bookThis: "Записаться",
@@ -403,6 +407,7 @@ const ru: typeof es = {
     next: "Следующее изображение",
     dialog: "Увеличенный просмотр галереи",
     counter: "{current} из {total}",
+    filmstrip: "Лента работ",
     alts: {
       glitterArt: "Миндалевидный маникюр в нюдовом розовом с блёстками, цветком и стразом.",
       milkyWhite: "Короткий молочно-белый маникюр с глянцевым покрытием.",
@@ -444,10 +449,11 @@ const ru: typeof es = {
     phone: "Телефон",
     whatsapp: "WhatsApp",
     instagram: "Instagram",
+    instagramPending: "Профиль Instagram ещё не добавлен.",
     email: "Эл. почта",
     hours: "Ориентировочные часы",
     hoursNote:
-      "Это часы только для справки. Реальная доступность видна при записи через Square.",
+      "Это часы только для справки. Реальная доступность видна при записи.",
     addressNote: "Точный адрес сообщается после подтверждения записи.",
     locationPending: "Расположение пока не указано.",
     phonePending: "Телефон пока не указан.",
@@ -490,8 +496,8 @@ const ru: typeof es = {
     updated: "Документ необходимо заполнить до публикации сайта.",
     p1: "Это заготовка правового уведомления, обязательного в Испании. В нём должны быть указаны личность владелицы, контакты и, при необходимости, налоговый номер и профессиональный адрес.",
     p2: "Эти сведения не выдуманы. Они будут добавлены, когда Неринга их предоставит.",
-    p3: "Содержание сайта носит информационный характер. Запись и свободное время ведутся через Square Appointments. Цены в формате €XX — предварительные.",
-    p4: "Фотографии в галерее — работы Неринги. Цены в формате €XX остаются предварительными, пока не будут подтверждены.",
+    p3: "Содержание сайта носит информационный характер. Запись и свободное время ведутся через Square Appointments.",
+    p4: "Фотографии в галерее — работы Неринги.",
   },
 };
 
@@ -526,7 +532,7 @@ const lt: typeof es = {
   services: {
     heading: "Paslaugos",
     subtitle:
-      "Procedūros švariam, elegantiškam ir ilgaamžiui rezultatui. Kainos ir trukmė yra orientacinės, kol bus patvirtinta galutinė informacija.",
+      "Procedūros švariam, elegantiškam ir ilgaamžiui rezultatui.",
     price: "Kaina",
     duration: "Trukmė",
     bookThis: "Rezervuoti",
@@ -566,6 +572,7 @@ const lt: typeof es = {
     next: "Kitas vaizdas",
     dialog: "Išdidinta galerijos peržiūra",
     counter: "{current} iš {total}",
+    filmstrip: "Darbų juosta",
     alts: {
       glitterArt: "Migdolų formos manikiūras nude rožinė su blizgučiais, gėle ir kristalu.",
       milkyWhite: "Trumpas pieniškai baltas manikiūras su blizgia danga.",
@@ -607,10 +614,11 @@ const lt: typeof es = {
     phone: "Telefonas",
     whatsapp: "WhatsApp",
     instagram: "Instagram",
+    instagramPending: "Instagram profilis dar nepridėtas.",
     email: "El. paštas",
     hours: "Orientacinės valandos",
     hoursNote:
-      "Šios valandos tik informacinės. Tikras laisvas laikas matomas rezervuojant per Square.",
+      "Šios valandos tik informacinės. Tikras laisvas laikas matomas rezervuojant.",
     addressNote: "Tikslus adresas pateikiamas patvirtinus vizitą.",
     locationPending: "Vieta dar nenurodyta.",
     phonePending: "Telefonas dar nenurodytas.",
@@ -654,8 +662,8 @@ const lt: typeof es = {
     updated: "Šį dokumentą reikia užpildyti prieš svetainės paleidimą.",
     p1: "Tai Ispanijoje privalomo teisinio pranešimo vieta. Jame turi būti savininkės tapatybė, kontaktai ir, jei taikoma, mokesčių mokėtojo kodas bei profesinis adresas.",
     p2: "Šie duomenys nėra sugalvoti. Jie bus įrašyti, kai Neringa juos pateiks.",
-    p3: "Svetainės turinys informacinis. Rezervacijas ir laisvą laiką tvarko Square Appointments. Kainos €XX yra laikinos.",
-    p4: "Galerijos nuotraukos rodo Neringos darbus. Kainos €XX yra laikinos, kol bus patvirtintos.",
+    p3: "Svetainės turinys informacinis. Rezervacijas ir laisvą laiką tvarko Square Appointments.",
+    p4: "Galerijos nuotraukos rodo Neringos darbus.",
   },
 };
 

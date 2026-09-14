@@ -1,11 +1,11 @@
 import { useEffect, useId, useRef } from "react";
 import { createPortal } from "react-dom";
 import { BookingButton } from "./BookingButton";
+import { BrandLockup } from "./BrandLockup";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { useLanguage } from "../i18n/LanguageContext";
-import { getWhatsAppUrl, hasInstagram, hasWhatsApp, business } from "../config/business";
+import { hasInstagram, business } from "../config/business";
 import { useLockBody } from "./Reveal";
-import { MessageCircle } from "lucide-react";
 import { InstagramIcon } from "./icons";
 
 type MobileMenuProps = {
@@ -14,13 +14,12 @@ type MobileMenuProps = {
   onNavigate: (sectionId: string) => void;
 };
 
-const LINKS = ["home", "services", "gallery", "about", "reviews", "contact"] as const;
+const LINKS = ["services", "gallery", "about", "reviews", "contact"] as const;
 
 export function MobileMenu({ open, onClose, onNavigate }: MobileMenuProps) {
   const { t } = useLanguage();
   const titleId = useId();
   const closeRef = useRef<HTMLButtonElement>(null);
-  const whatsappUrl = getWhatsAppUrl(t.whatsapp.defaultMessage);
 
   useLockBody(open);
 
@@ -36,7 +35,6 @@ export function MobileMenu({ open, onClose, onNavigate }: MobileMenuProps) {
   }, [open, onClose]);
 
   const labels: Record<(typeof LINKS)[number], string> = {
-    home: t.nav.home,
     services: t.nav.services,
     gallery: t.nav.gallery,
     about: t.nav.about,
@@ -48,15 +46,23 @@ export function MobileMenu({ open, onClose, onNavigate }: MobileMenuProps) {
 
   return createPortal(
     <div
-      className="fixed inset-0 z-[100] flex flex-col bg-[#F6F1EB] px-6 py-6 xl:hidden"
+      className="fixed inset-0 z-[100] flex flex-col bg-[#F6F1EB] px-6 py-5 xl:hidden"
       role="dialog"
       aria-modal="true"
       aria-labelledby={titleId}
     >
-      <div className="flex items-center justify-between">
-        <p id={titleId} className="font-serif text-xl tracking-[0.16em] uppercase text-charcoal">
+      <div className="flex shrink-0 items-center justify-between gap-4">
+        <p id={titleId} className="sr-only">
           {business.businessName}
         </p>
+        <button
+          type="button"
+          onClick={() => onNavigate("home")}
+          className="text-left"
+          aria-label={t.nav.home}
+        >
+          <BrandLockup size="sm" />
+        </button>
         <button
           ref={closeRef}
           type="button"
@@ -71,52 +77,42 @@ export function MobileMenu({ open, onClose, onNavigate }: MobileMenuProps) {
         </button>
       </div>
 
-      <nav className="mt-8 flex flex-col gap-1 overflow-y-auto" aria-label={t.nav.main}>
+      <nav
+        className="mt-8 flex flex-col border-t border-charcoal/10"
+        aria-label={t.nav.main}
+      >
         {LINKS.map((id) => (
           <button
             key={id}
             type="button"
             onClick={() => onNavigate(id)}
-            className="min-h-12 border-b border-charcoal/10 px-1 text-left font-serif text-2xl text-charcoal"
+            className="min-h-12 border-b border-charcoal/10 py-3 text-left font-serif text-[1.4rem] leading-none tracking-wide text-charcoal"
           >
             {labels[id]}
           </button>
         ))}
       </nav>
 
-      <div className="mt-8">
+      <div className="mt-8 shrink-0">
         <BookingButton className="w-full" />
+        {hasInstagram ? (
+          <a
+            href={business.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex min-h-11 items-center gap-2 text-sm text-charcoal"
+          >
+            <InstagramIcon size={18} />
+            {t.cta.instagram}
+          </a>
+        ) : null}
       </div>
 
-      {(hasWhatsApp || hasInstagram) && (
-        <div className="mt-5 flex flex-col gap-2">
-          {whatsappUrl ? (
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex min-h-11 items-center gap-2 text-sm text-charcoal"
-            >
-              <MessageCircle size={18} aria-hidden="true" />
-              {t.cta.whatsapp}
-            </a>
-          ) : null}
-          {hasInstagram ? (
-            <a
-              href={business.instagramUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex min-h-11 items-center gap-2 text-sm text-charcoal"
-            >
-              <InstagramIcon size={18} />
-              {t.cta.instagram}
-            </a>
-          ) : null}
-        </div>
-      )}
-
-      <div className="mt-auto pt-8">
-        <LanguageSwitcher variant="stack" />
+      <div className="mt-auto shrink-0 pt-8">
+        <p className="mb-1 text-[0.68rem] font-medium uppercase tracking-[0.28em] text-muted">
+          {t.nav.language}
+        </p>
+        <LanguageSwitcher />
       </div>
     </div>,
     document.body,

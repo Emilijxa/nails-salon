@@ -115,6 +115,32 @@ button {
   }
 }
 
+.filmstrip-track {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.filmstrip-track::-webkit-scrollbar {
+  display: none;
+}
+
+.filmstrip-frame {
+  flex: 0 0 calc((100% - 14px) / 1.16);
+}
+
+@media (min-width: 640px) {
+  .filmstrip-frame {
+    flex: 0 0 calc((100% - 28px) / 2.22);
+  }
+}
+
+@media (min-width: 1024px) {
+  .filmstrip-frame {
+    flex: 0 0 calc((100% - 42px) / 3.28);
+  }
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

@@ -1,5 +1,4 @@
-import { MessageCircle } from "lucide-react";
-import { InstagramIcon } from "./icons";
+import { InstagramIcon, WhatsAppIcon } from "./icons";
 import {
   business,
   getWhatsAppUrl,
@@ -91,7 +90,7 @@ export function Footer() {
               rel="noopener noreferrer"
               className="inline-flex min-h-11 items-center gap-2 text-muted hover:text-charcoal"
             >
-              <MessageCircle size={16} aria-hidden="true" />
+              <WhatsAppIcon size={16} />
               WhatsApp
             </a>
           ) : null}

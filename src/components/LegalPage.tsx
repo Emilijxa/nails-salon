@@ -8,7 +8,7 @@ export function LegalPage({ kind }: { kind: LegalKind }) {
   const copy = kind === "privacy" ? t.privacy : t.legal;
 
   return (
-    <main id="main-content" className="bg-ivory px-5 py-16 sm:px-8 sm:py-24">
+    <main id="main-content" className="bg-ivory px-5 pb-16 pt-24 sm:px-8 sm:pb-24 sm:pt-28">
       <article className="mx-auto max-w-2xl">
         <p className="text-xs uppercase tracking-[0.28em] text-rose-dark">{copy.updated}</p>
         <h1 className="mt-4 font-serif text-4xl text-charcoal sm:text-5xl">{copy.title}</h1>

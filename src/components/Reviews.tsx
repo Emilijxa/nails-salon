@@ -31,7 +31,7 @@ export function Reviews() {
   return (
     <section
       id="opiniones"
-      className="scroll-mt-24 bg-ivory px-5 py-20 sm:px-8 sm:py-24"
+      className="scroll-mt-0 bg-ivory px-5 py-20 sm:px-8 sm:py-24"
       aria-labelledby="reviews-heading"
     >
       <div className="mx-auto max-w-6xl">

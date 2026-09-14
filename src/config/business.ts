@@ -23,7 +23,7 @@ export const business = {
    * WhatsApp number in international format, digits only, no spaces.
    * Spain example: 346XXXXXXXX
    */
-  whatsappNumber: "",
+  whatsappNumber: "34602602893",
 
   /**
    * Full Instagram profile URL, for example:
@@ -42,10 +42,18 @@ export const business = {
   email: "",
 
   /**
-   * General public location only (city / area). Do not invent a street address.
-   * Example: "Valencia, España"
+   * Public studio address, shown in Contact. Use line breaks for display.
    */
-  location: "",
+  location:
+    "Calle Helena, 2-B esc. 1, Bajo H\nTorremar V\n03183 Torrevieja (Alicante)",
+
+  address: {
+    streetAddress: "Calle Helena, 2-B esc. 1, Bajo H, Torremar V",
+    postalCode: "03183",
+    addressLocality: "Torrevieja",
+    addressRegion: "Alicante",
+    addressCountry: "ES",
+  },
 
   /**
    * Public site URL used for canonical + Open Graph tags once deployed.

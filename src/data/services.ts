@@ -1,9 +1,6 @@
 /**
  * Service listings shown on the website.
  *
- * Prices and durations are placeholders until Neringa supplies the real ones.
- * Replace `price` and `duration` in place. Add or remove objects as needed.
- *
  * `translationKey` must match a key under `services.items` in
  * src/i18n/translations.ts
  *
@@ -21,31 +18,31 @@ export const services: Service[] = [
   {
     id: "semi-permanent",
     translationKey: "semiPermanent",
-    price: "€XX",
-    duration: "XX min",
+    price: "€18",
+    duration: "1 h",
   },
   {
     id: "gel-nails",
     translationKey: "gelNails",
-    price: "€XX",
-    duration: "XX min",
+    price: "€32",
+    duration: "2 h",
   },
   {
     id: "fill",
     translationKey: "fill",
-    price: "€XX",
-    duration: "XX min",
+    price: "€25",
+    duration: "1–2 h",
   },
   {
     id: "removal",
     translationKey: "removal",
-    price: "€XX",
-    duration: "XX min",
+    price: "€12",
+    duration: "1 h",
   },
   {
     id: "nail-art",
     translationKey: "nailArt",
-    price: "€XX",
-    duration: "XX min",
+    price: "€12",
+    duration: "1 h",
   },
 ];

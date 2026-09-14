@@ -2,6 +2,7 @@ import {
   business,
   hasEmail,
   hasInstagram,
+  hasLocation,
   hasPhone,
   hasSiteUrl,
 } from "../config/business";
@@ -27,6 +28,17 @@ export function JsonLd() {
 
   if (hasEmail) {
     data.email = business.email;
+  }
+
+  if (hasLocation) {
+    data.address = {
+      "@type": "PostalAddress",
+      streetAddress: business.address.streetAddress,
+      postalCode: business.address.postalCode,
+      addressLocality: business.address.addressLocality,
+      addressRegion: business.address.addressRegion,
+      addressCountry: business.address.addressCountry,
+    };
   }
 
   if (hasInstagram) {
