@@ -47,7 +47,7 @@ export function Hero() {
           <div className="aspect-[4/5] overflow-hidden border border-champagne/20">
             <img
               src="/images/gallery/nails-01.jpg"
-              alt={t.gallery.alts.placeholder1}
+              alt={t.gallery.alts.glitterArt}
               className="h-full w-full object-cover"
               width={1200}
               height={1500}
@@ -55,7 +55,7 @@ export function Hero() {
           </div>
           <div className="absolute -bottom-6 -left-4 hidden w-36 overflow-hidden border border-champagne/25 sm:block lg:-left-8">
             <img
-              src="/images/gallery/nails-03.jpg"
+              src="/images/gallery/nails-05.jpg"
               alt=""
               className="aspect-[3/4] w-full object-cover"
               width={400}

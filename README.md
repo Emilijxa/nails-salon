@@ -114,14 +114,14 @@ Add or remove objects in the `services` array to change the list. Service names 
 1. Replace the files in `public/images/gallery/` (`nails-01.jpg` … `nails-08.jpg`) with Neringa’s photographs, **or**
 2. Change the `src` paths in `src/data/gallery.ts`.
 
-Current gallery images are decorative placeholders, not photographs of Neringa’s work. Alt text says so in every language.
+Current gallery photographs are Neringa’s real work. Add more files in `public/images/gallery/` and list them in `src/data/gallery.ts`.
 
 Hero image: `public/images/hero/hero-nails.jpg`  
 Open Graph image: `public/images/og-image.jpg` (currently the brand logo)
 
 ## 15. About text and portrait
 
-- Portrait: replace `public/images/about/neringa-portrait.jpg`
+- Portrait: `public/images/about/neringa-portrait.jpg`
 - Copy: edit `about.p1`, `about.p2` and `about.p3` in `src/i18n/translations.ts` for Spanish, English, Russian and Lithuanian
 
 `p3` is intentionally marked as unfinished so real biography details are not invented.

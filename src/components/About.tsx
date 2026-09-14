@@ -16,7 +16,7 @@ export function About() {
             <img
               src="/images/about/neringa-portrait.jpg"
               alt={t.about.portraitAlt}
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover object-[center_20%]"
               width={1200}
               height={1500}
               loading="lazy"

@@ -69,8 +69,7 @@ const es = {
   },
   gallery: {
     heading: "Galería",
-    subtitle:
-      "Una selección de trabajos. Las imágenes actuales son marcadores de posición; se sustituirán por fotografías reales de Neringa.",
+    subtitle: "Una selección de manicuras y nail art realizados por Neringa.",
     placeholderBadge: "Marcador de posición",
     close: "Cerrar",
     previous: "Imagen anterior",
@@ -78,14 +77,13 @@ const es = {
     dialog: "Vista ampliada de la galería",
     counter: "{current} de {total}",
     alts: {
-      placeholder1: "Marcador de posición de manicura. Sustituir por un trabajo real de Neringa.",
-      placeholder2: "Marcador de posición de manicura. Sustituir por un trabajo real de Neringa.",
-      placeholder3: "Marcador de posición de manicura. Sustituir por un trabajo real de Neringa.",
-      placeholder4: "Marcador de posición de manicura. Sustituir por un trabajo real de Neringa.",
-      placeholder5: "Marcador de posición de manicura. Sustituir por un trabajo real de Neringa.",
-      placeholder6: "Marcador de posición de manicura. Sustituir por un trabajo real de Neringa.",
-      placeholder7: "Marcador de posición de manicura. Sustituir por un trabajo real de Neringa.",
-      placeholder8: "Marcador de posición de manicura. Sustituir por un trabajo real de Neringa.",
+      glitterArt: "Manicura almendra en rosa nude con glitter, flor y detalle de strass.",
+      milkyWhite: "Manicura corta en blanco lechoso con acabado brillante.",
+      roseShimmer: "Manicura en rosa champagne con efecto shimmer.",
+      frenchSoft: "Manicura francesa suave en rosa con punta blanca.",
+      hotPink: "Manicura ovalada en rosa fucsia brillante.",
+      frenchClassic: "Manicura francesa en rosa natural con punta blanca.",
+      wineRed: "Manicura cuadrada en burdeos con brillo.",
     },
   },
   about: {
@@ -93,8 +91,8 @@ const es = {
     p1: "Neringa dedica cada cita a un trabajo limpio, cuidadoso y personalizado. El objetivo es que te sientas a gusto y salgas con uñas que te gusten de verdad.",
     p2: "Cuida la forma, el acabado y los pequeños detalles, para un resultado que se vea natural en tu día a día.",
     p3: "Texto de presentación pendiente de completar. Aquí se podrá añadir más información personal cuando Neringa lo indique. No se incluyen años de experiencia ni titulaciones hasta que se confirmen.",
-    portraitAlt: "Espacio para el retrato de Neringa. Sustituir por una fotografía real.",
-    portraitCaption: "Retrato pendiente de añadir",
+    portraitAlt: "Neringa, técnica de uñas, en su espacio de trabajo.",
+    portraitCaption: "Neringa",
   },
   reviews: {
     heading: "Opiniones",
@@ -167,7 +165,7 @@ const es = {
     p1: "Esta página es un marcador de posición para el aviso legal exigido en España. Debe incluir la identidad de la titular, los datos de contacto y, cuando corresponda, el NIF y el domicilio profesional.",
     p2: "Esos datos no se han inventado. Se añadirán cuando Neringa los facilite.",
     p3: "El contenido de esta web es informativo. Las reservas y la disponibilidad se gestionan a través de Square Appointments. Los precios mostrados como €XX son provisionales.",
-    p4: "Las imágenes actuales de la galería son marcadores de posición y no representan trabajos reales hasta que se sustituyan por fotografías de Neringa.",
+    p4: "Las fotografías de la galería muestran trabajos de Neringa. Los precios indicados como €XX son provisionales hasta que se confirmen.",
   },
 };
 
@@ -235,8 +233,7 @@ const en: typeof es = {
   },
   gallery: {
     heading: "Gallery",
-    subtitle:
-      "A selection of work. The current images are placeholders and will be replaced with Neringa’s own photographs.",
+    subtitle: "A selection of manicures and nail art by Neringa.",
     placeholderBadge: "Placeholder",
     close: "Close",
     previous: "Previous image",
@@ -244,14 +241,13 @@ const en: typeof es = {
     dialog: "Enlarged gallery view",
     counter: "{current} of {total}",
     alts: {
-      placeholder1: "Placeholder manicure image. Replace with Neringa’s real work.",
-      placeholder2: "Placeholder manicure image. Replace with Neringa’s real work.",
-      placeholder3: "Placeholder manicure image. Replace with Neringa’s real work.",
-      placeholder4: "Placeholder manicure image. Replace with Neringa’s real work.",
-      placeholder5: "Placeholder manicure image. Replace with Neringa’s real work.",
-      placeholder6: "Placeholder manicure image. Replace with Neringa’s real work.",
-      placeholder7: "Placeholder manicure image. Replace with Neringa’s real work.",
-      placeholder8: "Placeholder manicure image. Replace with Neringa’s real work.",
+      glitterArt: "Almond nails in nude pink with glitter, a floral accent and a crystal detail.",
+      milkyWhite: "Short milky-white manicure with a glossy finish.",
+      roseShimmer: "Champagne-pink manicure with a shimmer finish.",
+      frenchSoft: "Soft French manicure in pink with a white tip.",
+      hotPink: "Oval nails in glossy fuchsia pink.",
+      frenchClassic: "Natural pink French manicure with a white tip.",
+      wineRed: "Square nails in glossy burgundy.",
     },
   },
   about: {
@@ -259,8 +255,8 @@ const en: typeof es = {
     p1: "Neringa gives each appointment clean, careful, personal work. The aim is for you to feel at ease and leave with nails you truly like.",
     p2: "She pays attention to shape, finish and the quiet details, so the result feels natural in everyday life.",
     p3: "Introduction still to be completed. Further personal information can be added here when Neringa provides it. Years of experience and qualifications are not listed until they are confirmed.",
-    portraitAlt: "Space for Neringa’s portrait. Replace with a real photograph.",
-    portraitCaption: "Portrait still to be added",
+    portraitAlt: "Neringa, nail technician, at her work table.",
+    portraitCaption: "Neringa",
   },
   reviews: {
     heading: "Reviews",
@@ -332,7 +328,7 @@ const en: typeof es = {
     p1: "This page is a placeholder for the legal notice required in Spain. It should include the owner’s identity, contact details and, where applicable, tax identification and professional address.",
     p2: "Those details have not been invented. They will be added when Neringa provides them.",
     p3: "The content of this website is informational. Bookings and availability are managed through Square Appointments. Prices shown as €XX are provisional.",
-    p4: "Current gallery images are placeholders and do not represent real work until they are replaced with Neringa’s photographs.",
+    p4: "Gallery photographs show Neringa’s work. Prices shown as €XX are provisional until they are confirmed."
   },
 };
 
@@ -400,8 +396,7 @@ const ru: typeof es = {
   },
   gallery: {
     heading: "Галерея",
-    subtitle:
-      "Подборка работ. Сейчас здесь стоят временные изображения; их заменят настоящие фотографии Неринги.",
+    subtitle: "Подборка маникюра и нейл-арта Неринги.",
     placeholderBadge: "Временное фото",
     close: "Закрыть",
     previous: "Предыдущее изображение",
@@ -409,14 +404,13 @@ const ru: typeof es = {
     dialog: "Увеличенный просмотр галереи",
     counter: "{current} из {total}",
     alts: {
-      placeholder1: "Временное изображение маникюра. Заменить настоящей работой Неринги.",
-      placeholder2: "Временное изображение маникюра. Заменить настоящей работой Неринги.",
-      placeholder3: "Временное изображение маникюра. Заменить настоящей работой Неринги.",
-      placeholder4: "Временное изображение маникюра. Заменить настоящей работой Неринги.",
-      placeholder5: "Временное изображение маникюра. Заменить настоящей работой Неринги.",
-      placeholder6: "Временное изображение маникюра. Заменить настоящей работой Неринги.",
-      placeholder7: "Временное изображение маникюра. Заменить настоящей работой Неринги.",
-      placeholder8: "Временное изображение маникюра. Заменить настоящей работой Неринги.",
+      glitterArt: "Миндалевидный маникюр в нюдовом розовом с блёстками, цветком и стразом.",
+      milkyWhite: "Короткий молочно-белый маникюр с глянцевым покрытием.",
+      roseShimmer: "Маникюр цвета шампанского с шиммером.",
+      frenchSoft: "Мягкий французский маникюр в розовом с белым кончиком.",
+      hotPink: "Овальный маникюр в ярком фуксии.",
+      frenchClassic: "Французский маникюр в натуральном розовом с белым кончиком.",
+      wineRed: "Квадратный маникюр в бордовом с блеском.",
     },
   },
   about: {
@@ -424,8 +418,8 @@ const ru: typeof es = {
     p1: "Неринга уделяет каждой встрече чистое, внимательное и индивидуальное выполнение. Важно, чтобы вам было комфортно и чтобы ногти вам искренне нравились.",
     p2: "Она следит за формой, финишем и мелкими деталями, чтобы результат выглядел естественно в повседневной жизни.",
     p3: "Текст знакомства ещё предстоит дополнить. Личную информацию можно будет добавить, когда Неринга её предоставит. Стаж и дипломы не указываются, пока они не подтверждены.",
-    portraitAlt: "Место для портрета Неринги. Заменить настоящей фотографией.",
-    portraitCaption: "Портрет ещё не добавлен",
+    portraitAlt: "Неринга, мастер маникюра, за рабочим столом.",
+    portraitCaption: "Neringa",
   },
   reviews: {
     heading: "Отзывы",
@@ -497,7 +491,7 @@ const ru: typeof es = {
     p1: "Это заготовка правового уведомления, обязательного в Испании. В нём должны быть указаны личность владелицы, контакты и, при необходимости, налоговый номер и профессиональный адрес.",
     p2: "Эти сведения не выдуманы. Они будут добавлены, когда Неринга их предоставит.",
     p3: "Содержание сайта носит информационный характер. Запись и свободное время ведутся через Square Appointments. Цены в формате €XX — предварительные.",
-    p4: "Текущие изображения в галерее — временные и не показывают реальные работы, пока их не заменят фотографии Неринги.",
+    p4: "Фотографии в галерее — работы Неринги. Цены в формате €XX остаются предварительными, пока не будут подтверждены.",
   },
 };
 
@@ -565,8 +559,7 @@ const lt: typeof es = {
   },
   gallery: {
     heading: "Galerija",
-    subtitle:
-      "Darbų atranka. Dabar matote laikinas iliustracijas; jas pakeis tikros Neringos nuotraukos.",
+    subtitle: "Neringos manikiūro ir nail art darbų atranka.",
     placeholderBadge: "Laikina iliustracija",
     close: "Uždaryti",
     previous: "Ankstesnis vaizdas",
@@ -574,14 +567,13 @@ const lt: typeof es = {
     dialog: "Išdidinta galerijos peržiūra",
     counter: "{current} iš {total}",
     alts: {
-      placeholder1: "Laikina manikiūro iliustracija. Pakeisti tikru Neringos darbu.",
-      placeholder2: "Laikina manikiūro iliustracija. Pakeisti tikru Neringos darbu.",
-      placeholder3: "Laikina manikiūro iliustracija. Pakeisti tikru Neringos darbu.",
-      placeholder4: "Laikina manikiūro iliustracija. Pakeisti tikru Neringos darbu.",
-      placeholder5: "Laikina manikiūro iliustracija. Pakeisti tikru Neringos darbu.",
-      placeholder6: "Laikina manikiūro iliustracija. Pakeisti tikru Neringos darbu.",
-      placeholder7: "Laikina manikiūro iliustracija. Pakeisti tikru Neringos darbu.",
-      placeholder8: "Laikina manikiūro iliustracija. Pakeisti tikru Neringos darbu.",
+      glitterArt: "Migdolų formos manikiūras nude rožinė su blizgučiais, gėle ir kristalu.",
+      milkyWhite: "Trumpas pieniškai baltas manikiūras su blizgia danga.",
+      roseShimmer: "Šampaninės rožinės manikiūras su švytėjimo efektu.",
+      frenchSoft: "Švelnus prancūziškas manikiūras rožine su baltu galiuku.",
+      hotPink: "Ovalus manikiūras ryškia fuksijos spalva.",
+      frenchClassic: "Prancūziškas manikiūras natūralia rožine su baltu galiuku.",
+      wineRed: "Kvadratinis manikiūras blizgia bordo spalva.",
     },
   },
   about: {
@@ -589,8 +581,8 @@ const lt: typeof es = {
     p1: "Kiekvienam vizitui Neringa skiria švarų, rūpestingą ir asmeninį darbą. Svarbu, kad jaustumėtės ramiai ir išeitumėte su nagais, kurie jums iš tikrųjų patinka.",
     p2: "Ji atidžiai žiūri į formą, apdailą ir smulkias detales, kad rezultatas atrodytų natūraliai kasdienybėje.",
     p3: "Pristatymo tekstas dar pildomas. Daugiau asmeninės informacijos galima įrašyti, kai Neringa ją pateiks. Darbo stažas ir kvalifikacijos nenurodomi, kol nėra patvirtinti.",
-    portraitAlt: "Vieta Neringos portretui. Pakeisti tikra nuotrauka.",
-    portraitCaption: "Portretas dar neįkeltas",
+    portraitAlt: "Neringa, nagų meistrė, prie darbo stalo.",
+    portraitCaption: "Neringa",
   },
   reviews: {
     heading: "Atsiliepimai",
@@ -663,7 +655,7 @@ const lt: typeof es = {
     p1: "Tai Ispanijoje privalomo teisinio pranešimo vieta. Jame turi būti savininkės tapatybė, kontaktai ir, jei taikoma, mokesčių mokėtojo kodas bei profesinis adresas.",
     p2: "Šie duomenys nėra sugalvoti. Jie bus įrašyti, kai Neringa juos pateiks.",
     p3: "Svetainės turinys informacinis. Rezervacijas ir laisvą laiką tvarko Square Appointments. Kainos €XX yra laikinos.",
-    p4: "Dabartinės galerijos iliustracijos yra laikinos ir neatspindi tikrų darbų, kol nebus pakeistos Neringos nuotraukomis.",
+    p4: "Galerijos nuotraukos rodo Neringos darbus. Kainos €XX yra laikinos, kol bus patvirtintos.",
   },
 };
 
