@@ -1,10 +1,4 @@
-import { InstagramIcon, WhatsAppIcon } from "./icons";
-import {
-  business,
-  getWhatsAppUrl,
-  hasInstagram,
-  hasWhatsApp,
-} from "../config/business";
+import { business } from "../config/business";
 import { useLanguage } from "../i18n/LanguageContext";
 import { getAppPath, navigate, scrollToId } from "../lib/navigate";
 import { BookingButton } from "./BookingButton";
@@ -13,7 +7,6 @@ import { BrandLockup } from "./BrandLockup";
 export function Footer() {
   const { t } = useLanguage();
   const year = new Date().getFullYear();
-  const whatsappUrl = getWhatsAppUrl(t.whatsapp.defaultMessage);
 
   const goHomeSection = (hash: string) => {
     if (getAppPath() !== "/") {
@@ -70,31 +63,6 @@ export function Footer() {
             {t.cta.book}
           </BookingButton>
         </nav>
-
-        <div className="flex flex-col gap-3 text-sm">
-          {hasInstagram ? (
-            <a
-              href={business.instagramUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex min-h-11 items-center gap-2 text-muted hover:text-charcoal"
-            >
-              <InstagramIcon size={16} />
-              Instagram
-            </a>
-          ) : null}
-          {hasWhatsApp && whatsappUrl ? (
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex min-h-11 items-center gap-2 text-muted hover:text-charcoal"
-            >
-              <WhatsAppIcon size={16} />
-              WhatsApp
-            </a>
-          ) : null}
-        </div>
       </div>
 
       <div className="mx-auto mt-12 flex max-w-6xl flex-col gap-3 border-t border-charcoal/8 pt-6 text-xs text-muted sm:flex-row sm:items-center sm:justify-between">

@@ -12,16 +12,14 @@ export function About() {
     >
       <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
         <figure className="mx-auto w-full max-w-md">
-          <div className="aspect-[4/5] overflow-hidden">
-            <img
-              src="/images/about/neringa-portrait.jpg"
-              alt={t.about.portraitAlt}
-              className="h-full w-full object-cover object-[center_20%]"
-              width={1200}
-              height={1500}
-              loading="lazy"
-            />
-          </div>
+          <img
+            src="/images/about/neringa-portrait.jpg"
+            alt={t.about.portraitAlt}
+            className="h-auto w-full"
+            width={758}
+            height={972}
+            loading="lazy"
+          />
           <figcaption className="mt-3 text-center text-xs tracking-[0.16em] uppercase text-muted">
             {t.about.portraitCaption}
           </figcaption>

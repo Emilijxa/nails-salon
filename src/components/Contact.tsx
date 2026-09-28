@@ -26,9 +26,7 @@ export function Contact() {
   const mailtoUrl = getMailtoUrl();
   const locationLines = hasLocation ? business.location.split("\n") : [];
 
-  const instagramLogo = (
-    <InstagramIcon size={44} className="text-rose-dark" />
-  );
+  const instagramLogo = <InstagramIcon size={44} />;
 
   return (
     <section

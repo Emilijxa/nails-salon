@@ -16,9 +16,9 @@ export function Hero() {
         <img
           src="/images/hero/hero-nails.jpg"
           alt=""
-          className="h-full w-full object-cover object-[center_30%] opacity-[0.48]"
-          width={1400}
-          height={1750}
+          className="h-full w-full object-cover object-[center_36%] md:object-[center_50%] opacity-[0.48]"
+          width={768}
+          height={1024}
         />
         <div className="absolute inset-0 bg-ink/20" />
         <div className="absolute inset-0 bg-gradient-to-b from-ink/55 via-transparent to-ink/70" />

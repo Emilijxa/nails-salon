@@ -4,9 +4,8 @@ import { BookingButton } from "./BookingButton";
 import { BrandLockup } from "./BrandLockup";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { useLanguage } from "../i18n/LanguageContext";
-import { hasInstagram, business } from "../config/business";
+import { business } from "../config/business";
 import { useLockBody } from "./Reveal";
-import { InstagramIcon } from "./icons";
 
 type MobileMenuProps = {
   open: boolean;
@@ -95,17 +94,6 @@ export function MobileMenu({ open, onClose, onNavigate }: MobileMenuProps) {
 
       <div className="mt-8 shrink-0">
         <BookingButton className="w-full" />
-        {hasInstagram ? (
-          <a
-            href={business.instagramUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-4 inline-flex min-h-11 items-center gap-2 text-sm text-charcoal"
-          >
-            <InstagramIcon size={18} />
-            {t.cta.instagram}
-          </a>
-        ) : null}
       </div>
 
       <div className="mt-auto shrink-0 pt-8">

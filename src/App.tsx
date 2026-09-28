@@ -10,7 +10,6 @@ import { Navbar } from "./components/Navbar";
 import { Reviews } from "./components/Reviews";
 import { Seo } from "./components/Seo";
 import { Services } from "./components/Services";
-import { WhatsAppButton } from "./components/WhatsAppButton";
 import { useLanguage } from "./i18n/LanguageContext";
 import { getAppPath, scrollToId, type AppPath } from "./lib/navigate";
 import { useEffect, useState } from "react";
@@ -64,7 +63,6 @@ export default function App() {
         <HomePage />
       )}
       <Footer />
-      <WhatsAppButton />
     </>
   );
 }

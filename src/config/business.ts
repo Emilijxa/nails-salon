@@ -29,7 +29,7 @@ export const business = {
    * Full Instagram profile URL, for example:
    * https://www.instagram.com/username/
    */
-  instagramUrl: "",
+  instagramUrl: "https://www.instagram.com/by_neringaval/",
 
   /**
    * Display phone number, for example: +34 6XX XXX XXX
