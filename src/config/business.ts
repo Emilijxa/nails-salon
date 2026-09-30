@@ -57,9 +57,8 @@ export const business = {
 
   /**
    * Public site URL used for canonical + Open Graph tags once deployed.
-   * Example: "https://www.example.com"
    */
-  siteUrl: "",
+  siteUrl: "https://www.neringaval.com",
 } as const;
 
 export type BusinessConfig = typeof business;

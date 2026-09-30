@@ -219,9 +219,11 @@ export function GalleryFilmstrip({ images, onSelect }: GalleryFilmstripProps) {
               <img
                 src={image.src}
                 alt=""
-                className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.035]"
-                width={1200}
-                height={1500}
+                className={`h-full w-full transition-transform duration-700 ease-out group-hover:scale-[1.035] ${
+                  image.fit === "contain" ? "object-contain" : "object-cover"
+                }`}
+                width={image.fit === "contain" ? 916 : 1200}
+                height={image.fit === "contain" ? 1600 : 1500}
                 loading={index < 3 ? "eager" : "lazy"}
                 draggable={false}
               />

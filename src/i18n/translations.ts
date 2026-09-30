@@ -78,6 +78,8 @@ const es = {
     counter: "{current} de {total}",
     filmstrip: "Carrusel de trabajos",
     alts: {
+      pinkShimmerBeforeAfter:
+        "Antes y después: manicura en rosa nude con un brillo perlado.",
       glitterArt: "Manicura almendra en rosa nude con glitter, flor y detalle de strass.",
       milkyWhite: "Manicura corta en blanco lechoso con acabado brillante.",
       roseShimmer: "Manicura en rosa champagne con efecto shimmer.",
@@ -97,14 +99,20 @@ const es = {
   },
   reviews: {
     heading: "Opiniones",
-    subtitle:
-      "Las reseñas que ves ahora son ejemplos para maquetar la página. Se sustituirán por opiniones reales de clientas.",
+    subtitle: "",
     client: "Cliente",
+    lina: "Lina",
+    olga: "Olga",
+    rasa: "Rasa",
     ratingLabel: "Valoración: {rating} de 5",
+    postedOnLabel: "Publicado el {date}",
     items: {
-      placeholder1: "Texto de reseña aquí.",
-      placeholder2: "Texto de reseña aquí.",
-      placeholder3: "Texto de reseña aquí.",
+      placeholder1:
+        "¡Neringa fue fabulosa! Una técnica excelente y una conversadora encantadora. Disfruté mucho de mi pedicura.",
+      placeholder2:
+        "Una experiencia maravillosa, maravillosa, maravillosa. Mi amiga y yo vinimos hoy por primera vez con Neringa. Disfrutamos cada momento. Todo tan limpio. ¡Técnica encantadora! Resultado perfecto. Uñas preciosas y, en conjunto, una experiencia preciosa. Gracias☺️",
+      placeholder3:
+        "Fue absolutamente encantadora. Prestó mucha atención al detalle, y el diseño quedó perfecto, exactamente como yo quería. No podría estar más contenta con el resultado. ¡La recomiendo totalmente!",
     },
   },
   bookingFinal: {
@@ -244,6 +252,8 @@ const en: typeof es = {
     counter: "{current} of {total}",
     filmstrip: "Work filmstrip",
     alts: {
+      pinkShimmerBeforeAfter:
+        "Before and after: nude-pink manicure with a pearly shimmer.",
       glitterArt: "Almond nails in nude pink with glitter, a floral accent and a crystal detail.",
       milkyWhite: "Short milky-white manicure with a glossy finish.",
       roseShimmer: "Champagne-pink manicure with a shimmer finish.",
@@ -263,14 +273,20 @@ const en: typeof es = {
   },
   reviews: {
     heading: "Reviews",
-    subtitle:
-      "The reviews shown here are layout placeholders. They will be replaced with genuine client feedback.",
+    subtitle: "",
     client: "Client",
+    lina: "Lina",
+    olga: "Olga",
+    rasa: "Rasa",
     ratingLabel: "Rating: {rating} out of 5",
+    postedOnLabel: "Posted {date}",
     items: {
-      placeholder1: "Review text here.",
-      placeholder2: "Review text here.",
-      placeholder3: "Review text here.",
+      placeholder1:
+        "Neringa was fabulous! An excellent technician and warm conversationalist. I really enjoyed my pedicure",
+      placeholder2:
+        "A wonderful, wonderful, wonderful experience. My friend and I came in for our first experience with Neringa today. We loved every moment. So clean. Lovely technician! Perfect results. Beautiful nails and overall a lovely experience. Thank you☺️",
+      placeholder3:
+        "She was absolutely lovely. She paid great attention to detail, and the design turned out perfect, exactly what I wanted. I couldn’t be happier with the result. Highly recommend!",
     },
   },
   bookingFinal: {
@@ -409,6 +425,8 @@ const ru: typeof es = {
     counter: "{current} из {total}",
     filmstrip: "Лента работ",
     alts: {
+      pinkShimmerBeforeAfter:
+        "До и после: нюдово-розовый маникюр с жемчужным сиянием.",
       glitterArt: "Миндалевидный маникюр в нюдовом розовом с блёстками, цветком и стразом.",
       milkyWhite: "Короткий молочно-белый маникюр с глянцевым покрытием.",
       roseShimmer: "Маникюр цвета шампанского с шиммером.",
@@ -428,14 +446,20 @@ const ru: typeof es = {
   },
   reviews: {
     heading: "Отзывы",
-    subtitle:
-      "Сейчас показаны примеры для вёрстки страницы. Их заменят настоящие отзывы клиенток.",
+    subtitle: "",
     client: "Клиент",
+    lina: "Lina",
+    olga: "Olga",
+    rasa: "Rasa",
     ratingLabel: "Оценка: {rating} из 5",
+    postedOnLabel: "Опубликовано {date}",
     items: {
-      placeholder1: "Текст отзыва здесь.",
-      placeholder2: "Текст отзыва здесь.",
-      placeholder3: "Текст отзыва здесь.",
+      placeholder1:
+        "Неринга была чудесной! Отличный мастер и тёплая собеседница. Педикюр мне очень понравился.",
+      placeholder2:
+        "Чудесный, чудесный, чудесный опыт. Мы с подругой пришли сегодня к Неринге в первый раз. Нам понравился каждый момент. Так чисто. Замечательный мастер! Идеальный результат. Красивые ногти и в целом прекрасное впечатление. Спасибо☺️",
+      placeholder3:
+        "Она была абсолютно чудесной. Она уделила огромное внимание деталям, и дизайн получился идеальным — именно таким, как я хотела. Я невероятно довольна результатом. Очень рекомендую!",
     },
   },
   bookingFinal: {
@@ -574,6 +598,8 @@ const lt: typeof es = {
     counter: "{current} iš {total}",
     filmstrip: "Darbų juosta",
     alts: {
+      pinkShimmerBeforeAfter:
+        "Prieš ir po: nude rožinis manikiūras su perlamutriniu švytėjimu.",
       glitterArt: "Migdolų formos manikiūras nude rožinė su blizgučiais, gėle ir kristalu.",
       milkyWhite: "Trumpas pieniškai baltas manikiūras su blizgia danga.",
       roseShimmer: "Šampaninės rožinės manikiūras su švytėjimo efektu.",
@@ -593,14 +619,20 @@ const lt: typeof es = {
   },
   reviews: {
     heading: "Atsiliepimai",
-    subtitle:
-      "Čia rodomi maketo pavyzdžiai. Juos pakeis tikri klienčių atsiliepimai.",
+    subtitle: "",
     client: "Klientė",
+    lina: "Lina",
+    olga: "Olga",
+    rasa: "Rasa",
     ratingLabel: "Įvertinimas: {rating} iš 5",
+    postedOnLabel: "Paskelbta {date}",
     items: {
-      placeholder1: "Atsiliepimo tekstas čia.",
-      placeholder2: "Atsiliepimo tekstas čia.",
-      placeholder3: "Atsiliepimo tekstas čia.",
+      placeholder1:
+        "Neringa buvo nuostabi! Puiki meistrė ir šilta pašnekovė. Pedikiūras man labai patiko.",
+      placeholder2:
+        "Nuostabi, nuostabi, nuostabi patirtis. Su drauge šiandien pirmą kartą atėjome pas Neringą. Mums patiko kiekviena akimirka. Taip švaru. Nuostabi meistrė! Tobulas rezultatas. Gražūs nagai ir apskritai miela patirtis. Ačiū☺️",
+      placeholder3:
+        "Ji buvo visiškai nuostabi. Ji labai atidžiai žiūrėjo į detales, o dizainas išėjo tobulas — būtent toks, kokio norėjau. Esu nepaprastai patenkinta rezultatu. Labai rekomenduoju!",
     },
   },
   bookingFinal: {

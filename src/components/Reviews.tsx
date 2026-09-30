@@ -52,7 +52,21 @@ export function Reviews() {
                 key={review.id}
                 className="border border-charcoal/10 bg-white/60 px-6 py-8"
               >
-                <StarRating rating={review.rating} label={ratingLabel} />
+                <div className="flex items-start justify-between gap-4">
+                  <StarRating rating={review.rating} label={ratingLabel} />
+                  {review.postedOn ? (
+                    <time
+                      dateTime={review.postedOnIso}
+                      className="shrink-0 pt-0.5 text-[0.65rem] uppercase tracking-[0.18em] text-muted"
+                      aria-label={t.reviews.postedOnLabel.replace(
+                        "{date}",
+                        review.postedOn,
+                      )}
+                    >
+                      {review.postedOn}
+                    </time>
+                  ) : null}
+                </div>
                 <blockquote className="mt-5">
                   <p className="font-serif text-xl leading-relaxed text-charcoal">
                     {t.reviews.items[review.textKey]}

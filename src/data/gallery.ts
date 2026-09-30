@@ -10,6 +10,7 @@ export type GalleryImage = {
   id: string;
   src: string;
   altKey:
+    | "pinkShimmerBeforeAfter"
     | "glitterArt"
     | "milkyWhite"
     | "roseShimmer"
@@ -17,9 +18,16 @@ export type GalleryImage = {
     | "hotPink"
     | "frenchClassic"
     | "wineRed";
+  fit?: "cover" | "contain";
 };
 
 export const galleryImages: GalleryImage[] = [
+  {
+    id: "nails-08",
+    src: "/images/gallery/nails-08.jpg",
+    altKey: "pinkShimmerBeforeAfter",
+    fit: "contain",
+  },
   { id: "nails-01", src: "/images/gallery/nails-01.jpg", altKey: "glitterArt" },
   { id: "nails-02", src: "/images/gallery/nails-02.jpg", altKey: "milkyWhite" },
   { id: "nails-03", src: "/images/gallery/nails-03.jpg", altKey: "roseShimmer" },
