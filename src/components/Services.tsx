@@ -39,10 +39,6 @@ export function Services() {
                   </p>
                 </div>
                 <div className="flex flex-wrap items-center gap-x-6 gap-y-3 md:justify-end">
-                  <p className="text-sm text-charcoal">
-                    <span className="sr-only">{t.services.price}: </span>
-                    <span className="font-medium tracking-wide">{service.price}</span>
-                  </p>
                   <p className="inline-flex items-center gap-1.5 text-sm text-muted">
                     <Clock size={15} strokeWidth={1.5} aria-hidden="true" />
                     <span className="sr-only">{t.services.duration}: </span>
